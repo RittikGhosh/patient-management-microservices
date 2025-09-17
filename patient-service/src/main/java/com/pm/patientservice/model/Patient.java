@@ -16,6 +16,18 @@ public class Patient {
     @NotNull    // whenever we persist patient data, name should not be null
     private String name;
 
+    @Override
+    public String toString() {
+        return "Patient{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", dateOfBirth=" + dateOfBirth +
+                ", registeredDate=" + registeredDate +
+                '}';
+    }
+
     @NotNull
     @Email
     @Column(unique = true)

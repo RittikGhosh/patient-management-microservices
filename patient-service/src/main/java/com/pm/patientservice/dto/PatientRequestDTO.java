@@ -17,6 +17,17 @@ public class PatientRequestDTO {
     @NotBlank(message = "Address is required")
     private String address;
 
+    @Override
+    public String toString() {
+        return "PatientRequestDTO{" +
+                "name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", address='" + address + '\'' +
+                ", dateOfBirth='" + dateOfBirth + '\'' +
+                ", registeredDate='" + registeredDate + '\'' +
+                '}';
+    }
+
     @NotBlank(message = "Date of birth is required")
     private String dateOfBirth;
 

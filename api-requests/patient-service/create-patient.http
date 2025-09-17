@@ -1,0 +1,12 @@
+### POST request to create new patient
+POST http://localhost:4000/patients
+Content-Type: application/json
+
+{
+  "name": "Rittick",
+  "email": "rttckghsh89@gmail.com",
+  "address": "Bangalore",
+  "dateOfBirth": "2000-07-09",
+  "registeredDate": "2025-11-28"
+}
+###
